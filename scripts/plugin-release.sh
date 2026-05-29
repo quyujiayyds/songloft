@@ -5,15 +5,15 @@
 #   ./scripts/plugin-release.sh all [version]
 #
 # 示例:
-#   ./scripts/plugin-release.sh xiaomi              # 发布 xiaomi 插件（自动生成日期版本）
-#   ./scripts/plugin-release.sh xiaomi 2026.4.20    # 发布 xiaomi 插件（指定版本）
-#   ./scripts/plugin-release.sh all                 # 发布所有插件
-#   ./scripts/plugin-release.sh all 2026.4.20       # 发布所有插件（指定版本）
+#   ./scripts/plugin-release.sh miot              # 发布 miot 插件（自动生成日期版本）
+#   ./scripts/plugin-release.sh miot 2026.4.20    # 发布 miot 插件（指定版本）
+#   ./scripts/plugin-release.sh all               # 发布所有插件
+#   ./scripts/plugin-release.sh all 2026.4.20     # 发布所有插件（指定版本）
 
 set -e
 
 # 插件列表
-PLUGINS=("xiaomi" "lxmusic")
+PLUGINS=("miot" "lxmusic")
 
 # 颜色输出
 GREEN='\033[0;32m'
@@ -31,9 +31,9 @@ usage() {
     echo "  - all (所有插件)"
     echo ""
     echo "示例:"
-    echo "  $0 xiaomi              # 自动生成日期版本"
-    echo "  $0 xiaomi 2026.4.20    # 指定版本号"
-    echo "  $0 all                 # 发布所有插件"
+    echo "  $0 miot              # 自动生成日期版本"
+    echo "  $0 miot 2026.4.20    # 指定版本号"
+    echo "  $0 all               # 发布所有插件"
     exit 1
 }
 
