@@ -19,6 +19,8 @@ const REPO_BLOB_BASE = 'https://github.com/songloft-org/songloft/blob/main';
 const syncItems = [
   { from: 'README.md',    to: 'docs/quick-start.md' },
   { from: 'CHANGELOG.md', to: 'docs/changelog.md' },
+  { from: 'NOTICE',       to: 'docs/NOTICE.md' },
+  { from: 'PRIVACY.md',   to: 'docs/PRIVACY.md' },
 ];
 
 // markdown 链接重写：把 (...) 中的链接（不含 http/https/锚点）按规则改写。

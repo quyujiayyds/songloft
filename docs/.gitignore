@@ -6,6 +6,8 @@ bun.lock
 # 自动生成的 issues markdown（由 vitepress-plugin-github-issues 生成）
 issues/
 
-# 同步脚本从仓库根 README.md / CHANGELOG.md 生成，不入库
+# 同步脚本从仓库根生成，不入库（见 scripts/sync-docs.mjs）
 quick-start.md
 changelog.md
+NOTICE.md
+PRIVACY.md
